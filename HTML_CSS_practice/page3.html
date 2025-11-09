@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Complete Form Example</title>
+  <style>
+    form {
+      width: 60%;
+      margin: 20px auto;
+      background-color: #f3f0ff;
+      padding: 20px;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 10px;
+    }
+    input[type="submit"] {
+      background-color: #4a0072;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover {
+      background-color: #ff1a75;
+    }
+    label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center; color:#4a0072;">Complete User Form</h2>
+
+<form action="#" method="post">
+
+  <!-- Text Input -->
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+  <!-- Email Input -->
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+  <!-- Password -->
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+  <!-- Number -->
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" min="1" max="120" placeholder="Your Age">
+
+  <!-- Textarea -->
+  <label for="feedback">Feedback:</label>
+  <textarea id="feedback" name="feedback" rows="4" placeholder="Write your comments..."></textarea>
+
+  <!-- Select / Dropdown -->
+  <label for="country">Country:</label>
+  <select id="country" name="country">
+    <option value="">Select your country</option>
+    <option value="india">India</option>
+    <option value="usa">USA</option>
+    <option value="uk">UK</option>
+    <option value="australia">Australia</option>
+  </select>
+
+  <!-- Radio Buttons -->
+  <label>Gender:</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+
+  <!-- Checkbox -->
+  <label>Interests:</label><br>
+  <input type="checkbox" id="cricket" name="interest" value="cricket">
+  <label for="cricket">Cricket</label>
+  <input type="checkbox" id="football" name="interest" value="football">
+  <label for="football">Football</label>
+  <input type="checkbox" id="reading" name="interest" value="reading">
+  <label for="reading">Reading</label><br><br>
+
+  <!-- Submit Button -->
+  <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
